@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg, rgb(250, 45, 45), rgb(138, 7, 208));
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+h1 {
+    color: white;
+}
+
+input {
+    width: 21rem;
+    height: 4rem;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    font-size: medium;
+    background-color: #463a77;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    color: white;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-size: medium;
+}
+
+input:focus {
+    outline: none;
+}
+
+.search-btn {
+    position: relative;
+    left: -15px;
+    width: 6rem;
+    height: 4rem;
+    margin-top: 3rem;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+    border: none;
+    font-size: medium;
+    background: rgb(248, 127, 21);
+    color: white;
+    cursor: pointer;
+}
+
+.img-results {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    cursor: pointer;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.show-more {
+    position: relative;
+    left: -15px;
+    width: 6rem;
+    height: 4rem;
+    margin-top: 3rem;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+    border: none;
+    font-size: medium;
+    background: rgb(248, 127, 21);
+    color: white;
+    cursor: pointer;
+}
+
+/* Media query for screens less than 435px */
+@media screen and (max-width: 435px) {
+
+    input {
+        width: 60%;
+        height: 3rem;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .search-btn{
+        position: relative;
+        width: 38%;
+        height: 3rem;
+        left: 20px;
+    }
+
+    img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .img-results {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+        cursor: pointer;
+    }
+
+}
